@@ -2,7 +2,7 @@ const token = 'cab54984f872c6c2e6df10078b5256d4d0292725dbf887e8'
 
 export const server_calls = {
     get: async () => { 
-        const response = await fetch(`https://flask-portfolio-zhgs.onrender.com/api/contact`,
+        const response = await fetch(`https://flask-portfolio-zhgs.onrender.com/api/contacts`,
         {
             method: 'GET',
             headers: {
@@ -21,7 +21,7 @@ export const server_calls = {
     },
 
     create: async (data: any = {}) => {
-        const response = await fetch(`https://flask-portfolio-zhgs.onrender.com/api/contact`,
+        const response = await fetch(`https://flask-portfolio-zhgs.onrender.com/api/contacts`,
         {
             method: 'POST',
             headers: {
@@ -41,7 +41,7 @@ export const server_calls = {
     },
 
     update: async (id: string, data:any = {}) => {
-        const response = await fetch(`https://flask-portfolio-zhgs.onrender.com/api/contacts${id}`,
+        const response = await fetch(`https://flask-portfolio-zhgs.onrender.com/api/contact${id}`,
         {
             method: 'PUT',
             headers: {
