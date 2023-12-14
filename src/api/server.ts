@@ -41,7 +41,7 @@ export const server_calls = {
     },
 
     update: async (id: string, data:any = {}) => {
-        const response = await fetch(`https://flask-portfolio-zhgs.onrender.com/api/contact${id}`,
+        const response = await fetch(`https://flask-portfolio-zhgs.onrender.com/api/contact/${id}`,
         {
             method: 'PUT',
             headers: {
@@ -61,7 +61,7 @@ export const server_calls = {
     },
 
     delete: async (id: string) => {
-        const response = await fetch(`https://flask-portfolio-zhgs.onrender.com/api/contacts${id}`,
+        const response = await fetch(`https://flask-portfolio-zhgs.onrender.com/api/contacts/${id}`,
         {
             method: 'DELETE',
             headers: {
